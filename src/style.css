@@ -1,0 +1,30 @@
+@import url("https://unpkg.com/@ag-grid-community/all-modules@23.0.0/dist/styles/ag-grid.css");
+
+@import url("https://unpkg.com/@ag-grid-community/all-modules@23.0.0/dist/styles/ag-theme-alpine.css");
+
+
+h1, p {
+  font-family: Lato;
+}
+
+.editor button {
+  line-height: 1;
+  margin-left: 15px;
+}
+
+.editor {
+  margin: 4px;
+}
+
+.ag-input-wrapper {
+  line-height: 34px;
+  
+}
+
+.ag-cell-edit-input {
+ width: 100%;
+}
+
+.strike-through .ag-cell{
+  text-decoration: line-through;
+}
