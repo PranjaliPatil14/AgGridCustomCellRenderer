@@ -3,7 +3,7 @@ import "./style.css";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community";
 import ShowTodoStatus from "./ShowTodoStatus";
-import Dummy from "./ChangeStatus";
+import ChangeTodoStatus from "./ChangeStatus";
 
 export default function App() {
   const [rowData, setRowData] = useState([]);
@@ -27,7 +27,7 @@ export default function App() {
       headerName: "Completed",
       field: "completed",
       cellRendererFramework: ShowTodoStatus,
-      cellEditorFramework: Dummy
+      cellEditorFramework: ChangeTodoStatus
     }
   ];
 
