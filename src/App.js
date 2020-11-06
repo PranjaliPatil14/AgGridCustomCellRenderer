@@ -44,6 +44,7 @@ export default function App() {
         rowData={rowData}
         columnDefs={columnData}
         defaultColDef={defaultConfigs}
+        singleClickEdit
         rowClassRules={{
           "strike-through": params => !!params.data.completed
         }}
