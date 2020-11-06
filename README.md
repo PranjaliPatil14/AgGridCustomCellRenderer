@@ -8,3 +8,9 @@ Features present in the Example:
 4. Ediing - single click on todo title cell or status to go in edit mode.
 5. Move columns - drag columns to chnage their position
 6. Resize columns - click on divider between two columns to increase or decrease the width of the columns
+
+![Example Snapshot](public/exampleGrid.png)
+
+### Custom Editor
+
+![Example Snapshot](public/custom_editor.png)
