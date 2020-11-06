@@ -9,10 +9,10 @@ export default function App() {
   const [rowData, setRowData] = useState([]);
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos", { mode: "cors" })
-      .then(response => {
+      .then((response) => {
         return response.json();
       })
-      .then(jsonResponse => {
+      .then((jsonResponse) => {
         setRowData(jsonResponse);
       });
   }, []);
@@ -21,21 +21,21 @@ export default function App() {
     {
       headerName: "Title",
       field: "title",
-      minWidth: 350
+      minWidth: 350,
     },
     {
       headerName: "Completed",
       field: "completed",
       cellRendererFramework: ShowTodoStatus,
-      cellEditorFramework: ChangeTodoStatus
-    }
+      cellEditorFramework: ChangeTodoStatus,
+    },
   ];
 
   const defaultConfigs = {
     sortable: true,
     filter: true,
     resizable: true,
-    editable: true
+    editable: true,
   };
 
   return (
@@ -44,9 +44,10 @@ export default function App() {
         rowData={rowData}
         columnDefs={columnData}
         defaultColDef={defaultConfigs}
+        gridOptions={{ suppressMenuHide: true }}
         singleClickEdit
         rowClassRules={{
-          "strike-through": params => !!params.data.completed
+          "strike-through": (params) => !!params.data.completed,
         }}
       />
     </div>
